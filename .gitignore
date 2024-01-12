@@ -154,4 +154,6 @@ cython_debug/
 *.zip
 bottle.csv
 bottle_*.csv
+train.csv
+test.csv
 cast.csv
