@@ -38,3 +38,47 @@ def hist_plot_compare(x1, x2, x1_title, x2_title):
     sns.histplot(x2, ax=axes[1], bins=50).set(title=x2_title, xlabel="")
 
     plt.show()
+
+def get_calcofi_original_cols():
+    return calcofi_original_cols
+
+def get_lots_of_nan_cols():
+    return lots_of_nan_cols
+
+def get_without_nan_cols(columns):
+    without_nan_cols = list(set(columns) - set(get_lots_of_nan_cols()))
+    return without_nan_cols
+
+# 'without' NaN, strictly speaking, as we're leaving here the columns with ~20% missing values
+def get_originals_without_nan_cols():
+    return list(set(get_calcofi_original_cols()) - set(get_lots_of_nan_cols()))
+
+calcofi_original_cols = [
+        'R_SVA',
+        'R_TEMP',
+        'R_PHAEO',
+        'R_PRES',
+        'R_NO3',
+        'R_NO2',
+        'Lat_Dec',
+        'R_Depth',
+        'R_CHLA',
+        'R_DYNHT',
+        'Lon_Dec',
+        'R_O2',
+        'R_NH4',
+        'R_SIGMA',
+        'R_PO4',
+        'R_O2Sat',
+        'R_SIO3'
+    ]
+
+lots_of_nan_cols = [
+    'R_NH4',
+    'R_PHAEO',
+    'R_CHLA',
+    'R_NO2',
+    'R_NO3',
+    'R_SIO3',
+    'R_PO4',
+]
