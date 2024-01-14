@@ -153,6 +153,5 @@ cython_debug/
 
 *.zip
 *.csv
-*.joblib
 *.xlsx
 !scores/*.xlsx

@@ -40,18 +40,18 @@ def hist_plot_compare(x1, x2, x1_title, x2_title):
     plt.show()
 
 def get_calcofi_original_cols():
-    return calcofi_original_cols
+    return sorted(calcofi_original_cols)
 
 def get_lots_of_nan_cols():
-    return lots_of_nan_cols
+    return sorted(lots_of_nan_cols)
 
 def get_without_nan_cols(columns):
     without_nan_cols = list(set(columns) - set(get_lots_of_nan_cols()))
-    return without_nan_cols
+    return sorted(without_nan_cols)
 
 # 'without' NaN, strictly speaking, as we're leaving here the columns with ~20% missing values
 def get_originals_without_nan_cols():
-    return list(set(get_calcofi_original_cols()) - set(get_lots_of_nan_cols()))
+    return sorted(list(set(get_calcofi_original_cols()) - set(get_lots_of_nan_cols())))
 
 calcofi_original_cols = [
         'R_SVA',
