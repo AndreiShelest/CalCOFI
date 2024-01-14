@@ -55,7 +55,7 @@ def get_originals_without_nan_cols():
 
 calcofi_original_cols = [
         'R_SVA',
-        'R_TEMP',
+        'R_SALINITY',
         'R_PHAEO',
         'R_PRES',
         'R_NO3',
@@ -82,3 +82,7 @@ lots_of_nan_cols = [
     'R_SIO3',
     'R_PO4',
 ]
+
+random_seed = 2024
+
+target_feature = 'R_TEMP'
