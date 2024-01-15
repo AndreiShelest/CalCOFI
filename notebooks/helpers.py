@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import re
 
 
 def get_splits(tree_clf):
@@ -38,6 +39,9 @@ def hist_plot_compare(x1, x2, x1_title, x2_title):
     sns.histplot(x2, ax=axes[1], bins=50).set(title=x2_title, xlabel="")
 
     plt.show()
+
+def rename_cols_for_lgbm(dataset):
+    return dataset.rename(columns = lambda x: re.sub('[^A-Za-z0-9_]+', 'X', x))
 
 def get_calcofi_original_cols():
     return sorted(calcofi_original_cols)
