@@ -29,7 +29,7 @@ categorisation, median imputation, feauture selection, feature enginneering, cro
 
 # Technical details
 
-1. The dataset is quite large, therefore is rejected by github by default. You can download the starting bottle and cast .csv files from kaggle https://www.kaggle.com/datasets/sohier/calcofi/data or use the Google Drive access to which is provided. The files should follow the structure (view from the root folder):
+1. The dataset is quite large, hence I didn't upload it. You can download the starting bottle and cast .csv files from kaggle https://www.kaggle.com/datasets/sohier/calcofi/data or use the Google Drive access to which is provided. The files should follow the structure (view from the root folder):
 
     ./data/bottle/bottle.csv
     ./data/cast/cast.csv
@@ -37,3 +37,4 @@ categorisation, median imputation, feauture selection, feature enginneering, cro
 2. The project was mainly developed under conda, therefore requirements.txt file is specific to conda.
 
 3. The notebooks should be run in order 1 to 6, then 7-11 can be executed independendly, and the 12th is the last to run.
+
