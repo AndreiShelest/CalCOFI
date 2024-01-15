@@ -1,4 +1,9 @@
 ## Machine Learning project
+
+**authors: Bracha Zofia, Shelest Andrei**
+
+University of Warsaw
+
 # CalCOFI 
 The CalCOFI data set represents the longest (1949-present) and most complete (more than 50,000 sampling stations) time series of oceanographic and larval fish data in the world. It includes abundance data on the larvae of over 250 species of fish; larval length frequency data and egg abundance data on key commercial species; and oceanographic and plankton data. The physical, chemical, and biological data collected at regular time and space intervals quickly became valuable for documenting climatic cycles in the California Current and a range of biological responses to them. CalCOFI research drew world attention to the biological response to the dramatic Pacific-warming event in 1957-58 and introduced the term “El Niño” into the scientific literature.
 
@@ -6,9 +11,30 @@ The California Cooperative Oceanic Fisheries Investigations (CalCOFI) are a uniq
 
 # The dataset
 
-The dataset consist of two datasets: bottle (contains oceanographic data) and cast (conatins information about sampling stations such as geolocational data).
+The dataset consist of two datasets: bottle (contains oceanographic data) and cast (conatins information about sampling stations such as geolocational data). For the purpose of the project we have decided to use mostly bottle dataset and location data from cast dataset.
 
 # The purpose of the project
-tbd
+There are many different projects that try to predict various features, such as salinity or Phaeophytin concentration. We have decided to predict water tempreture.
 
- 
+# Models evaluated
+For the purpose of this regression project, we have implemented:
+* Ordinary Least Squares Regression
+* Lasso Regression
+* Ridge Regression
+* Regression Tree
+* Gradient Boosting Model using LightGBM library
+
+# Techniques used
+categorisation, median imputation, feauture selection, feature enginneering, cross validation, hyperparameter tunning, grid searching
+
+# Technical details
+
+1. The dataset is quite large, hence I didn't upload it. You can download the starting bottle and cast .csv files from kaggle https://www.kaggle.com/datasets/sohier/calcofi/data or use the Google Drive access to which is provided. The files should follow the structure (view from the root folder):
+
+    ./data/bottle/bottle.csv
+    ./data/cast/cast.csv
+
+2. The project was mainly developed under conda, therefore requirements.txt file is specific to conda.
+
+3. The notebooks should be run in order 1 to 6, then 7-11 can be executed independendly, and the 12th is the last to run.
+
