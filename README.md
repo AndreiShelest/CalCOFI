@@ -1,5 +1,7 @@
 ## Machine Learning project
-authors: Bracha Zofia, Shelest Andrei /n
+
+**authors: Bracha Zofia, Shelest Andrei**
+
 University of Warsaw
 
 # CalCOFI 
@@ -23,7 +25,7 @@ For the purpose of this regression project, we have implemented:
 * Gradient Boosting Model using LightGBM library
 
 # Techniques used
-categorisation, median imputation, feauture selection, feature enginneering, cross validation, hyperparameter tunning, gridsearch
+categorisation, median imputation, feauture selection, feature enginneering, cross validation, hyperparameter tunning, grid searching
 
 # Technical details
 
