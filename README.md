@@ -9,10 +9,21 @@ The California Cooperative Oceanic Fisheries Investigations (CalCOFI) are a uniq
 
 # The dataset
 
-The dataset consist of two datasets: bottle (contains oceanographic data) and cast (conatins information about sampling stations such as geolocational data).
+The dataset consist of two datasets: bottle (contains oceanographic data) and cast (conatins information about sampling stations such as geolocational data). For the purpose of the project we have decided to use mostly bottle dataset and location data from cast dataset.
 
 # The purpose of the project
-We want to predict water tempreture.
+There are many different projects that try to predict various features, such as salnity or Phaeophytin concentration. We have decided to predict water tempreture.
+
+# Models evaluated
+For the purpose of this regression project, we have implemented:
+* Ordinary Least Squares Regression
+* Lasso Regression
+* Ridge Regression
+* Regression Tree
+* Gradient Boosting Model using LightGBM library
+
+# Techniques used
+#gridsearch, 
 
 # Technical details
 
